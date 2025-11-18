@@ -26,6 +26,24 @@
     <body>
         <div id="map">
         </div>
+        <div class="title">Peta Penggunaan Lahan Desa Citaman Jernih</div>
+        <div class="legend-card">
+            <div class="legend-title">Legenda</div>
+            <div class="legend-content">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #e31a1c;"></div>
+                    <div class="legend-label">Batas Desa</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #61960d;"></div>
+                    <div class="legend-label">Hutan</div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #7bc111;"></div>
+                    <div class="legend-label">Kebun Sawit</div>
+                </div>
+            </div>
+        </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/L.Control.Layers.Tree.min.js"></script>
@@ -60,7 +78,7 @@
             } else {
               highlightLayer.setStyle({
                 fillColor: '#ffff00',
-                fillOpacity: 1
+                fillOpacity: 0.35
               });
             }
         }
@@ -249,7 +267,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.25,
                 fillColor: 'rgba(97,150,13,1.0)',
                 interactive: true,
             }
@@ -302,7 +320,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.25,
                 fillColor: 'rgba(123,193,17,1.0)',
                 interactive: true,
             }
@@ -355,7 +373,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.25,
                 fillColor: 'rgba(155,223,0,1.0)',
                 interactive: true,
             }
@@ -408,7 +426,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.25,
                 fillColor: 'rgba(208,151,114,1.0)',
                 interactive: true,
             }
@@ -511,7 +529,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.25,
                 fillColor: 'rgba(89,162,198,1.0)',
                 interactive: true,
             }
@@ -567,7 +585,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 1,
+                fillOpacity: 0.25,
                 fillColor: 'rgba(57,136,195,1.0)',
                 interactive: true,
             }
